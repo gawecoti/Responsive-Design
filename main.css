@@ -1,0 +1,28 @@
+body {
+	margin: 0 auto;
+}
+
+/* Navigation bar */
+nav {
+	background: ;
+}
+
+/* Sidebar */
+.sidebar {
+	background: red;
+	width: 20%;
+}
+
+.sidebar ul li {
+	list-style: none;
+}
+
+/* Content */
+.content {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.content p {
+	font-size: 1.25em;
+}
