@@ -2,11 +2,13 @@
 <head>
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="responsive.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="navigation.js"></script>
 	<title>The Grand Signal | Tech, Human Rights, and Social Change</title>
 </head>
 <body>
 	<header>
-	<nav class="main-nav">
+	<nav id="main-nav">
 		<img src="logo.png" alt="" width="35" height="35">
 		<h1>
 			<a href="">The Grand Signal</a>
@@ -16,13 +18,14 @@
 			<li class="non-mobile"><a href="">Digital Rights</a></li>
 			<li class="non-mobile"><a href="">Global Development</a></li>
 			<li class="non-mobile"><a href="">Future</a></li>
-			<li class="mobile-menu">
-				<object data="icon-menu.svg" type="image/svg+xml">
-  					<img src="icon-png2x.png" />
-				</object>
+			<li id="mobile-icon">
+				<button>
+					<img src="icon-png2x.png" width="20" height="13"/>
+				</button>		
 			</li>
 	</nav>
-	<nav class="mobile-menu">
+	<div id="separator"></div>
+	<nav id="mobile-menu">
 		<ul>
 			<li><a href="">Today's Top Stories</a></li>
 			<li><a href="">Digital Rights</a></li>
@@ -31,7 +34,7 @@
 		</ul>
 	</nav>
 	</header>
-	<div class="sidebar">
+	<div id="sidebar">
 		<ul>
 			<li id="first-entry"><a href="">Article 1</a></li>
 			<li><a href="">Article 2</a></li>
@@ -45,21 +48,26 @@
 			<li id="last-entry"><a href="">Article 10</a></li>
 		</ul>
 	</div>
-	<div class="content">
-		<a id="tags" href="">NSA</a>
+	<div id="content">
+		<ul id="tags">
+			<li><a href="">Digital Rights</a></li>
+			<li><a href="">NSA</a></li>
+			<li><a href="">Microsoft</a></li>
+		</ul>
+		
 		<h1>Microsoft plans on increasing security against the NSA</h1>
 		<h3>Written by Tim Gaweco | <a href="">@timgaweco</a></h3>
-		<div class="image">
+		<div id="image">
 			<img src="ms.jpg" alt="" width="" height="">
 			<p>Photo courtesy of Joe from Flickr | www.flickr.com</p>
 		</div>
-		<div class="text">
+		<div id="text">
 			<p>In an effort to prevent the government from circumventing legal processes to access sensitive user data, Microsoft announced in a blog post that they plan on fighting back. The company will focus on three main areas - widening encryption to all of their services, reinforcing legal protections for customers, and improving transparency of their code.</p>
 			<p>Encryption will extend to all services including Outlook.com, SkyDrive, and Windows Azure. They'll be using the "best-in-class industry cryptography to protect these channels, including Perfect Forward Secrecy and 2048-bit key lengths". Changes across all of their products will be completed by the end of 2014.</p>
 			<p>Microsoft will also ensure to legally protect their customers by informing them if a legal request is made for their data from the government. Any gag orders issued by the government will be contested in the court, as they've purportedly done in the past. The company also plans to build on their program that allows their source code to be reviewed by government customers in order to ensure that it's absent of back doors.</p>
 			<p>"We want to ensure that important questions about government access are decided by courts rather than dictated by technological might. And we're focused on applying new safeguards worldwide, recognizing the global nature of these issues and challenges. We believe these new steps strike the right balance, advancing for all of us both the security we need and the privacy we deserve," said Brad Smith, Executive Vice President of Legal and Corporate Affairs.</p>
 		</div>
-		<div class="signup">
+		<div id="signup">
 			<h4>Sign up to our newsletter (one email every Friday)</h4>
 			<input type="text" placeholder="Email">
 			<button>Subscribe</button>
