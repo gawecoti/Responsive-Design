@@ -70,13 +70,13 @@
 
 /* Greater than 850px */
 @media only screen and (min-width: 850px) {
-	#mobile-menu {
+	.mobile-menu {
 		display: none;
 	}
 }
 
 /* Less than 850px */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 849px) {
 	.non-mobile {
 		display: none;
 	}
