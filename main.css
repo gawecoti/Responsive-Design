@@ -49,12 +49,19 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	margin: 0 30px 0 0;
+	margin: 0 20px 0 0;
 }
 
 nav ul li a {
+	color: #DDDDDD;
 	font-family: 'Gotham SSm',Helvetica,Arial,sans-serif;
-	font-weight: 400;
+	font-size: 0.875m;
+	font-weight: 200;
+
+}
+
+nav ul li a:hover {
+	color: #FFFFFF;
 }
 
 /* Sidebar */
