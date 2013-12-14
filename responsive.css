@@ -1,7 +1,5 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 	.content {
 		width: 80%;
@@ -9,8 +7,7 @@ and (max-device-width : 480px) {
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
+@media only screen and (min-width : 321px) {
 /* Styles */
 	.content {
 		width: 50%;
@@ -18,8 +15,7 @@ and (min-width : 321px) {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
+@media only screen and (max-width : 320px) {
 /* Styles */
 	.content {
 		width: 80%;
@@ -27,9 +23,7 @@ and (max-width : 320px) {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
 	.content {
 		width: 70%;
@@ -37,10 +31,7 @@ and (max-device-width : 1024px) {
 }
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
 	.content {
 		width: 70%;
@@ -48,10 +39,7 @@ and (orientation : landscape) {
 }
 
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
 	.content {
 		width: 70%;
@@ -59,8 +47,7 @@ and (orientation : portrait) {
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) {
 /* Styles */
 	.content {
 		width: 50%;
@@ -68,8 +55,7 @@ and (min-width : 1224px) {
 }
 
 /* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
+@media only screen and (min-width : 1824px) {
 /* Styles */
 	.content {
 		width: 70%;
@@ -77,9 +63,23 @@ and (min-width : 1824px) {
 }
 
 /* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 
 }
+
+/* Greater than 850px */
+@media only screen and (min-width: 850px) {
+	#mobile-menu {
+		display: none;
+	}
+}
+
+/* Less than 850px */
+@media only screen and (max-width: 850px) {
+	.non-mobile {
+		display: none;
+	}
+}
+
+
