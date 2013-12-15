@@ -4,5 +4,8 @@ $(document).ready(function(){
 	});
 
 	// If window size is below 850px and nav bar is down, move it up 
+	
 
+
+	
 });
