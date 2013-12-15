@@ -141,7 +141,7 @@ nav ul li a:hover {
 	display: inline;
 }
 
-#tags li a{
+#tags li a {
 	background: #D00F1A;
 	border-radius: 2px;
 	color: #FFFFFF;
@@ -155,25 +155,20 @@ nav ul li a:hover {
 	transition: 0.2s ease-in-out;
 }
 
-#twitter:hover {
-	opacity: 0.5;
-}
-
-#content span a:hover {
-	background: white;
-}
-
 #content h3 {
 	color: gray;
 	font-style: italic;
-	font-size: 1em;
+	font-size: 0.875em;
 	font-weight: 400;
 }
 
-#content h3 a {
-	color: blue;
+#twitter {
+	color: #7598c9;
 }
 
+#twitter:hover {
+	opacity: 0.8;
+}
 #content img {
 	background-size: 100%;
 	background-position: center;
@@ -197,24 +192,57 @@ nav ul li a:hover {
 	line-height: 2.0em;
 }
 
+/* Social share */
+#social-share {
+	bottom: 450px;
+	position: fixed;
+	right: 0px;
+	top: auto;
+	width: 120px;
+}
+
+#social-share ul li {
+	list-style: none;
+}
+
+#social-share ul li a {
+	background: #D00F1A;
+	border-radius: 2px;
+	border-bottom: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	display: block;
+	font-size: 0.875em;
+	padding: 5px;
+	text-align: center;
+}
+
+#social-share ul a:hover {
+	opacity: 0.7;
+}
+
 /* Sign up */
 #signup {
-	background: #ffffd5;
+	background: #fcf8e3;
+	border: 1px solid #faebcc;
 	padding: 30px;
 	text-align: center;
 }
 
 #signup h4 {
+	color: #8a6d3b;
 	font-family: Helvetica;
 	margin: 0 0 10px 0;
 }
 
 #signup input[type="text"] {
 	box-shadow: none;
-	border: 1px #888888 solid;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 	font-size: 0.875em;
-	padding: 5px;
-	width: 200px;
+	height: 37px;
+	padding: 6px 12px;
+	width: 180px;
 }
 
 #signup input[type="text"]:focus {
@@ -224,16 +252,18 @@ nav ul li a:hover {
 }
 
 #signup button {
-	background: #108f06;
-	border: none;
+	background: #5cb85c;
+	border: 1px solid #398439;
 	border-radius: 3px;
 	color: #FFFFFF;
 	cursor: pointer;
+	font-size: 0.875em;
+	letter-spacing: 0.5px;
 	padding: 10px;
 }
 
 #signup button:hover {
-	background: #16b10a;
+	background: #47a447;
 }
 
 
