@@ -73,6 +73,9 @@
 	#content {
 		width: 70%;
 	}
+	#sidebar {
+		display: none;
+	}
 }
 
 /* Greater than 850px */

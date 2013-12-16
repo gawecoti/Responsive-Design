@@ -83,10 +83,9 @@ nav ul li a:hover {
 /* Sidebar */
 #sidebar {
 	background: #d3d3d3;
-	border-radius: 2px;
-	display: none;
 	float: left;
-	overflow: auto;
+	margin-top: 100px;
+	position: relative;
 	width: 20%;
 }
 
@@ -95,20 +94,25 @@ nav ul li a:hover {
 	margin: 0;
 }
 
-#sidebar ul li {
+#sidebar ul li a {
+	color: #000000;
+	display: block;
+	font-size: 1em; /* 18px/16px */
+	font-weight: 100;
 	list-style: none;
 	margin: 0;
 	padding: 7.40740740741%; /* 20px/148px */
 }
 
-#sidebar ul li:hover {
+#sidebar ul li a:hover {
 	background: #ededed;
 }
 
-#sidebar ul li a {
-	color: #000000;
-	font-size: 1em; /* 18px/16px */
-	text-decoration: none;
+.date {
+	color: #D00F1A;
+	font-size: 0.75em;
+	font-weight: 400;
+	margin-bottom: 0;
 }
 
 #first-entry {
@@ -117,6 +121,26 @@ nav ul li a:hover {
 
 #last-entry {
 	margin-bottom: 0;
+}
+
+#toggle-bar {
+	background: #D00F1A;
+	color: #FFFFFF;
+	padding: 10px;
+	position: absolute;
+	right: -29px;
+	top: 0;
+}
+
+#toggle-bar:hover {
+	background: #910a12;
+	cursor: pointer;
+}
+
+#plus {
+	display: none;
+	height: 10px;
+	width: 10px;
 }
 
 /* Content */
@@ -152,7 +176,6 @@ nav ul li a:hover {
 
 #tags li a:hover {
 	background: gray;
-	transition: 0.2s ease-in-out;
 }
 
 #content h3 {
@@ -208,6 +231,8 @@ nav ul li a:hover {
 #social-share ul li a {
 	background: #D00F1A;
 	border-radius: 2px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
 	border-bottom: 1px solid #FFFFFF;
 	color: #FFFFFF;
 	display: block;
@@ -217,7 +242,7 @@ nav ul li a:hover {
 }
 
 #social-share ul a:hover {
-	opacity: 0.7;
+	background: #910a12;
 }
 
 /* Sign up */
