@@ -10,11 +10,11 @@ $(document).ready(function(){
 
 		if (icon == "none") {
 			$("#minus").css("display", "none");
-			$("#plus").css("display", "inline");
+			$("#plus").css("display", "inline-block");
 		}
 		else {
 			$("#plus").css("display", "none");
-			$("#minus").css("display", "inline");
+			$("#minus").css("display", "inline-block");
 		}
 	});
 
